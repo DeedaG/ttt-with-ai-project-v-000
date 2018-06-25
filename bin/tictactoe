@@ -29,4 +29,3 @@ end
 
 
   puts "Do you want to play again?"
-  play_again = gets.strip
