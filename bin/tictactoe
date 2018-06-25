@@ -25,7 +25,7 @@ when "1"
 when  "2"
   Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), Board.new)
   puts "Player_1 = X and goes first.  Player_2 = O.  Please enter X for player_1 or O for player_2."
-  input = gets.strip 
+  
 
 else
   puts "Do you want to play again?"
