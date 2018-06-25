@@ -15,9 +15,10 @@ when "0"
 
 
 when "1"
+  puts "Enter a number between 1 and 9 to make a move.  Player_1 = X and player_2 is O."
   game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O"), Board.new)
         game.play
-    
+
 
 
 when  "2"
