@@ -23,7 +23,7 @@ when "1"
 
 
 when  "2"
-  Game.new(Player::Human.new("X"), Player::Human.new("O"), Board.new)
+  Game.new(player_1 = Player::Human.new("X"), player_2 = Player::Human.new("O"), Board.new)
 else
 end
 
