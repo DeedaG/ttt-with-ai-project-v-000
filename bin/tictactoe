@@ -5,7 +5,7 @@ require_relative '../config/environment'
 puts "Welcome to Tic-tac-toe!"
 puts "What kind of game do you want to play, 0,1 or 2 players?"
 input = gets.strip
-puts "Player_1 = X and goes first.  Player_2 = O.  Please enter X for player_1 or O for player_2."
+puts "Player_1 = X and goes first.  Player_2 = O.  Please enter X to start the game."
 
 case input
 when "0"
@@ -15,7 +15,7 @@ when "0"
 
 
 when "1"
-  puts "Enter a number between 1 and 9 to make a move.  Player_1 = X and player_2 is O."
+  puts "Enter a number between 1 and 9 to make a move."
   game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O"), Board.new)
         game.play
 
