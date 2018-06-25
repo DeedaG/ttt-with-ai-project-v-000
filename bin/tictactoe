@@ -24,7 +24,7 @@ when "1"
 when  "2"
   puts "Enter a number between 1 and 9 to make a move."
   Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), Board.new)
-
+      game.play
 
 
 else
