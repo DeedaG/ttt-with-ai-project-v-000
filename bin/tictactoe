@@ -11,19 +11,19 @@ puts "Player_1 = X and goes first.  Player_2 = O.  Please enter X for player_1 o
 case input
 when "0"
   puts "The computer will play itself."
-  game = Game.new(player_1 = Player::Computer.new("X"), player_2 = Player::Computer.new("O"), Board.new)
+  game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), Board.new)
         game.play
 
 
 when "1"
-  game = Game.new(player_1 = Player::Computer.new("X"), player_2 = Player::Human.new("O"), Board.new)
+  game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O"), Board.new)
         game.play
     puts "Do you want the computer to win or random response?"
     puts "Enter 1 for random and 2 for computer wins."
 
 
 when  "2"
-  Game.new(player_1 = Player::Human.new("X"), player_2 = Player::Human.new("O"), Board.new)
+  Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), Board.new)
 else
 end
 
