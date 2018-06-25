@@ -24,8 +24,12 @@ when "1"
 
 when  "2"
   Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), Board.new)
+
+
 else
+  puts "Do you want to play again?"
+  
 end
 
 
-  puts "Do you want to play again?"
+  
